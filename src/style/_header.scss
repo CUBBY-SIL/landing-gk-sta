@@ -1,0 +1,50 @@
+header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+        font-size: calcFontSize(10px, 10);
+        margin-right: 10px;
+        text-align: center;
+    }
+    .contact{
+        text-align: right;
+        font-size: calcFontSize(10px, 6);
+        p{
+            &:first-child{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+.logo{
+    font-size: calcFontSize(13px, 30);
+    font-weight: 600;
+    line-height: 62.4px;
+    text-transform: uppercase;
+    margin-right: 10px;
+    a{
+        color: rgba(85, 85, 85, 1);
+    }
+    
+}
+
+@media (max-width:560px){
+    .logo{
+        line-height: 24px;
+    }
+    .title{
+        line-height: 13px;
+    }
+    header{
+        .contact{
+            p{
+                &:first-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

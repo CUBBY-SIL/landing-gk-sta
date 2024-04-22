@@ -1,0 +1,32 @@
+@import 'style/fonts.scss';
+@import 'style/var.scss';
+@import 'style/style.scss';
+@import 'style/functions.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    font-family: 'Open Sans';
+}
+a{
+    text-decoration: none;
+}
+
+.layout{
+    width: 100%;
+    max-width: 1338px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+@import 'style/header.scss';
+@import 'style/banner-section.scss';

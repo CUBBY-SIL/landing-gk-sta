@@ -1,0 +1,3 @@
+@function calcFontSize($min, $difference){
+    @return calc($min + $difference * (100vw / 1920));
+}
