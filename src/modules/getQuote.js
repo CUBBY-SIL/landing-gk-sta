@@ -10,8 +10,6 @@ window.addEventListener('load', function(){
         $.ajax({
             url: 'https://cors-anywhere.herokuapp.com/http://api.forismatic.com/api/1.0/?method=getQuote&lang=ru&format=json',
             success: function(data){
-                console.log(data)
-
                 if(quoteBlock.innerHTML == 'Место под вашу цитату'){
                     quoteBlock.innerHTML = data.quoteText;
                     if(data.quoteAuthor){
