@@ -3,6 +3,12 @@
 }
 .catalog-item{
     margin-top: 120px;
+    @media (max-width:560px){
+        &:first-child{
+            margin-top: 80px;
+        }
+    }
+    
 }
 .catalog-list{
     display: flex;

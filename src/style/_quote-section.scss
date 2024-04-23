@@ -1,11 +1,12 @@
 .quote-section{
     background-color: rgba(248, 248, 248, 1);
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 blockquote{
     text-align: center;
     margin-bottom: 40px;
-    #quote{
+    p{
         font-size: calcFontSize(24px, 16);
         line-height: 54px;
         color: rgba(85, 85, 85, 1);
@@ -39,6 +40,18 @@ blockquote{
 }
 .quotes-container{
     text-align: center;
+    blockquote{
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+@media (max-width:560px){
+    blockquote{
+        p{
+            line-height: 32px;
+        }
+    }
 }
 @media (max-width: 406px){
     .btn-get{
